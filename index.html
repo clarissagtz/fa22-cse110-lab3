@@ -3,42 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB 2</title>
+    <title>LAB 2 (Meeting minutes)</title>
+    <link rel="icon" type="image/x-icon" href="/sunfloweer.jpg">
 </head>
 <body>
     <header>
-        <div>Team 33 first brainstorm meeting</div>
+        <h1>Welcome to notes:</h1>
+        <h4><i>September 25, 2032</i></h4>
+        <h4>This is not based on real events </h4>
+        <div>
+            <h2>Index:</h2>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="#Attendees">Attendees</a></li>
+                <li><a href="#Discussed">Topics we discussed</a></li>
+                <li><a href="#next"> Topics for next meeting</a></li>
+                <li><a href="#Suggestions">Suggestions</a></li>
+                <li><a href="#email">Email</a></li>
+            </ul>
+
+        </nav>
 
     </header>
 
     <main>
         <h1>Team 33 meeting notes:</h1>
         <!-- maybe but an image here  -->
-        <h3>People who attend the metting:</h3>
-        <ul>
-            <li>Lisa Peack</li>
-            <li>Joseph Li</li>
-            <li>Veronica Rodriguez</li>
-            <li>Carlos Red</li>
-        </ul>
+        <img width="320" height= "240"  src="team.png">
+        <hr>
+        <details>
+            <summary>All team members </summary>
+            <ul>
+                <li>Robert Pattinson</li>
+                <li>Miles Teller</li>
+                <li>Lisa Peack</li>
+                <li>Joseph Li</li>
+                <li>Veronica Rodriguez</li>
+                <li>Carlos Red</li>
+                <li>Sandra Bullock</li>
+                <li>Eiza Gonzalez</li>
+            </ul>
+          </details>
 
-        <h3>Topics that will be discused today:</h3>
-        <ol>
-            <li>Team name</li>
-            <li>Meeting dates</li>
-            <li>Project ideas</li>
-            <li></li>
-        </ol>
+        <section>
+            <h3 id="Attendees">People who attend the metting:</h3>
+            <ul>
+                <li>Lisa Peack</li>
+                <li>Joseph Li</li>
+                <li>Veronica Rodriguez</li>
+                <li>Carlos Red</li>
+                <li>Robert Pattinson</li>
+            </ul>
+        </section>
 
-        <h5> this is a video test </h5>
-        <video width="320" height= "240" controls>
-            <source src="lights_go.mp4" type="video/mp4" >
-        </video>
+        <hr>
+        <section>
+            <h3 id="Discussed" >Topis dicussed</h3>
+            <ol>
+                <li>Team name</li>
+                    <p> Some names mentioned during the discussion where:
+                    <span>TrtonsTeam, WeAreOne, The Avengers</span></p>
+                <li>Meeting dates</li> 
+                    <p>We discussed possible dates <em>(Thursday- Fridays night)</em>, 
+                    but without the presence of everyone we decided to create a <strong>when2meet </strong>
+                    so everyone can share the aviability and pick a day that works for everyone. So if you are 
+                    reading this please fill out this <b>ASAP</b> . </p>
+                <li>Project ideas</li>
+                        <ul>
+                            <li>Vacation Planner</li>
+                            <li>Restaurant decider</li>
+                            <li>Agenda for students webapp</li>
+                            <li>Maybe a easy to play <i>"videogame"</i></li>
+                            <li>Find a roomate UCSD</li>
+                            <li>Find a study group @UCSD</li>
+                        </ul>
+                <br>
+                <li>Off-topic</li>
+                        <p>Go to the beach, to meet each other.</p>
+            </ol>
+        </section>
 
+        <hr>
+        <section>
+            <h3 id="next" >Whats next?</h3>
+            <p>For next meeting, we want to describe each of the roles and try to assign roles and tasks
+                to each member of the team. Divide the team into front end team , back end team, full stack 
+                and project manager. Each member should come with their prefernece ready (if any). 
+                Also every member should bring the pros and cons of their favorite website idea. 
+            </p>
+            <audio controls>
+                <source src="birds.wav" type="audio/mpeg"> Your browser does not support the audio element.
+              </audio>
+        </section>
+
+        <hr>
+        <section>
+            <h3 id = "Suggestions">Suggestions:</h3>
+            <ul>
+                <li>Robert suggested to do spring reviews every two weeks and every other day short mettings to 
+                    check the progress of each member of the team.
+                </li>
+                <li>Lisa suggest that every member of the team watch this html tutorial:
+                </li>
+                <video width="370" height= "290" controls>
+                    <source src="lights_go.mp4" type="video/mp4" >
+                </video>
+            </ul>
+
+        </section>
+     
 
     </main>
+    <br>
+    <br>
+    <hr >
 
-    <h2> page in process.. </h2>
+    <footer>
+        <h4 id="email">To get this sent to your email fill out the following: </h4>
+        <form>
+            <fieldset>
+                <label> Name: </label><input placeholder="Enter name">
+                <label for="year">Year:</label>
+                    <select name="year" id="year">
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>
+                        <option value="4th">4th</option>
+                    </select>
+
+
+                <br>
+                <br>
+                <label> Email: </label><input type="text" placeholder="Enter email">
+                <br>
+                <br>
+                <label for="uni-choice">School:</label>
+                <input list="universities" id="uni-choice" name="uni-choice">
+
+                <datalist id="universities">
+                    <option value="Unversity of California San Diego">
+                    <option value="Unversity of California Los Angeles">
+                    <option value="Unversity of California Merced">
+                    <option value="Unversity of California Berkeley">
+                    <option value="Unversity of California Riverside">
+                </datalist>
+            
+                <br>
+                <br>
+                
+
+                <label>Suggestions:</label><br>
+                <textarea rows="4" cols="50" type="text" placeholder="Enter your suggestions here"></textarea>
+                <br>
+                <button>Submit</button>
+
+            </fieldset>
+            
+
+        </form>
+
+    </footer>
     
 </body>
 </html>
