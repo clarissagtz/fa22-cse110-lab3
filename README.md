@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://clarissagtz.github.io/Lab2_Starter/
+https://clarissagtz.github.io/fa22-cse110-lab3/
