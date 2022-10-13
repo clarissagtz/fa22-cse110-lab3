@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: Propose chaneges
 about: Describe this issue template's purpose here.
 title: ''
 labels: ''
@@ -7,4 +7,7 @@ assignees: ''
 
 ---
 
+##Name:
 
+
+##Suggested changes:
