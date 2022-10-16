@@ -1,0 +1,194 @@
+/* this is my css file */
+
+.box {
+    /* border: 3px solid green; */
+    border-radius: 1rem; /* #1 relative unit rem */
+    border-width: 0.2em; /* #2 relative unit em */
+    border-color:rgb(0, 109, 128);
+    border-style: solid;
+    background-color:white;
+    /* padding: 40px; */
+
+    margin-top: 1mm; /* #2 absoulte unit-> mm */
+    margin-bottom: 1cm; /* #3 absolute unit-> cm*/
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+    position: relative;
+    max-width: 300px;
+    min-width: 200px;
+    height: 150px;
+  }
+
+  /* // this is only on people who attend the metting  */
+  .box2{ 
+      background-color: #FFFF8A;
+      border-width: 10ch ; /* #3 relative unit ch*/
+  }
+
+  .subtitle{
+      text-align: center;
+  }
+
+  .invisible{
+    display: none;
+}
+  .ex{
+      display: inline;
+      color: green;
+      align-items: center;
+  }
+
+  .ex2{
+      display: block;
+      color: pink;
+      align-items: center;
+  }
+  .ex3{
+    display: inline-block;
+}
+.box-main{
+    
+    background: rgb(136, 225, 231);
+    width: 200px; /*was 160 */
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:rgb(0, 109, 128);
+    border-style: solid;
+    /* color:gray; */
+}
+.box-mainlong{
+    background: rgb(136, 225, 231);
+    width: 300px; /*was 160 */
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    /* this is using the short hand notation margin: <top> <right> <bottom> <left>  */
+    margin: 2px 2px 2px 2px;
+
+    border-radius: 5px;
+    border: 1px solid rgb(0, 109, 128);
+    /* color:gray; */
+}
+
+
+
+#date{
+    color: rgb(12, 52, 160);
+    text-decoration: none; 
+}
+*{
+    color:rgb(19, 25, 56);
+}
+h4{
+    color:grey;
+}
+
+h2, summary, h4 {
+    text-decoration: underline;
+    text-decoration-color: rgb(193, 202, 228);
+}
+body{
+    background-color:#FFFFEB;
+    font-family: 'Merriweather', serif;
+}
+@media screen and (min-width: 480px) {
+    h2, h3 {
+      color: rgb(29, 10, 10);
+    }
+  }
+
+
+.indexcss{ 
+    width: 300px; /* #1 absolute unit-> px*/
+    height: 10px;
+    text-align: center;
+    position: static;
+/* this is using the short hand notation padding: <top> <right> <bottom> <left>  */
+    padding: 10px 10px 10px 10px; 
+}
+
+/* here im using an attribute selector with a pseudo class : hover and :Active */
+a[href^="#"] {
+    color: rgb(19, 28, 109);
+}
+a[href^="#"]:hover {
+    color: green;
+}
+a[href^="#"]:active {
+    color: red;
+}
+
+button:hover{
+    background-color: rgb(124, 209, 124);
+}
+button:active{
+    background-color: rgb(84, 84, 223);
+}
+
+
+/* COMBINATORS: */
+/* Descendat combinator: */
+li li {
+    list-style-type: circle;
+}
+
+/* Child combinator */
+p > em {
+    background-color: pink;
+}
+
+/* General Sibling combinator */
+p ~ span{
+    
+    color: rgb(219, 94, 115);
+}
+
+/* Adjacent sibling combinator */
+img + p{
+    color: rgb(117, 117, 21);
+    
+  }
+/* Combining two selectors element.class */
+h1.title{
+    font-family: 'Merriweather', serif;
+    color: hsl(248, 47%, 45%);
+    text-align: center;
+    margin:auto;
+}
+
+/* 
+NEED TO ADD: 
+Flexbox and GRID */
+.flex-container{
+    display: flex;
+}
+.flex-container > div{
+    background-color: #d0c6e2e5; /* #f1f1f1*/
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+
+}
+.grid-container{
+    display: grid;
+}
+.grid-container > ul >li {
+    text-align: center;
+    background-color: #ecc8c8;
+    margin: 10px;
+    margin-right: 40px;
+    padding: 20px;
+    font-size: 20px;
+    list-style-type: none;
+
+}
